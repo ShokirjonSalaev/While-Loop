@@ -115,39 +115,78 @@ from idlelib.colorizer import matched_named_groups
 # royxat = [1,2,3,4,6]
 # print(juft_sum(royxat))
 # 3- masala
-# def daraja(son):
-#
-#
-#
-#
-#
-#
-#
-#
+# def unililar_soni(matn):
+#     if matn == "":
+#         return 0
+#     birinchi = 1 if matn[0].lower() in "aeiou" else 0
+#     return birinchi + unililar_soni(matn[1:])
+# n = input("matnni kiriting:")
+# print(unililar_soni(n))
+# #
+
 #
 #
 #
 #
 # # 4-masala
-#  def daraja (son):
-#     n = son **("son1")
-#     return n
-#  son  = int(input("sonni kiriting"))
-# son = int(input("N"))
+# def daraja(son, dar):
+#
+#     if dar == 0:
+#         return 1
 #
 #
+#     return son * daraja(son, dar - 1)
+#
+# print(daraja(2, 3))  # 8
+# print(daraja(5,4))
 
 
 
 
+#5 -masala
+
+# def maksimal(royxat):
+#     if len(royxat) == 1:
+#         return royxat[0]
+#     else:
+#         return royxat[0] if royxat[0] > maksimal(royxat[1:]) else maksimal(royxat[1:])
+#
+#
+# print(maksimal([4, 8, 2, 15, 7]))
 
 
+# 6- masala
 
 
+# def chiroyli_matn(matn):
+#     if not matn:
+#         return ""
+#     natija = ""
+#     yangi_soz = True
+#     for harf in matn:
+#         if yangi_soz:
+#             natija += harf.upper()
+#             yangi_soz = False
+#         else:
+#             natija += harf.lower()
+#         if harf == " ":
+#             yangi_soz = True
+#     return natija
+# print(chiroyli_matn("salom dunyo"))
 
 
+# 7 -masala
+
+# def fib(n):
+#     if n == 0:
+#         return 0
+#     if n == 1:
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
+# print(fib(6))
+#
 
 
+# 3 - bolim
 
-
-
+ # 1-masala
